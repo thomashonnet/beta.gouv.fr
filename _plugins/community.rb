@@ -1,18 +1,13 @@
 module Jekyll
   module CommunityFilter
     def community(people, state, sort_by = 'oldest')
+      result = []
       now = Date.today
-      current = []
-      past = []
-      people.each do |person|
-        missions = person.data['missions']
-        if missions&.last and # they had at least one
-          missions&.last['end'] and # and it had an end date
-          missions&.last['end'] <= now # and the date is in the past
-          past << person
-        else
-          current << person
-        end
+
+      past, current = people.partition do |person|
+        mission = person.data['missions']&.last
+
+        mission and mission['end'] and mission['end'] <= now
       end
 
       if state == 'past'
@@ -21,14 +16,8 @@ module Jekyll
         result = current
       end
 
-      if sort_by != 'alpha' 
-        result = result.sort_by { |person| person.data['missions']&.map{ |e| e['start'] || Date.today }&.min || Date.today }.reverse
-      else
-        result = result.sort_by { |person| person.data['fullname'] }
-      end
-
       if state == 'recent'
-        result[1..3]
+        result.take(3)
       else
         result
       end
@@ -85,7 +74,7 @@ class RenderCommunityStatsTag < Liquid::Tag
         end
         if author.data['missions']&.last['end'] >= now
           result['domaine'][author.data['domaine']] = result['domaine'][author.data['domaine']] + 1
-          result['total'] = result['total'] + 1 
+          result['total'] = result['total'] + 1
         end
       end
     end
