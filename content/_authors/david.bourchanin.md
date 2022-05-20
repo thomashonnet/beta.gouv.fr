@@ -1,7 +1,7 @@
 ---
 fullname: David Bourchanin
-role: 🍋  Design
-domaine: Design
+role: Design
+domaine: Ux/Ui Design
 github: bourchanin
 missions:
   - start: 2022-04-01
