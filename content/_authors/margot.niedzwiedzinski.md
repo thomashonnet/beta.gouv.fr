@@ -11,5 +11,3 @@ missions:
 startups:
   - territoires-en-transitions
 ---
-
-🌱 Chargée de déploiement - Territoires en Transitions 🌱
