@@ -1,11 +1,14 @@
 ---
-startup: Collectif Objets
-title: L'incubateur de la Culture recrute
-roles: "Chargé.e de déploiement pour la start-up Collectif Objets"
 contact: collectifobjets@beta.gouv.fr
+roles: Chargé.e de déploiement pour la start-up Collectif Objets
 open: true
+date: 2022-06-13T16:55:53.016Z
+depublication_date: 2022-06-13T16:55:53.056Z
+startup: collectif_objets
+contacts: elsa.le-duigou
 domaines:
   - Déploiement
+title: L'incubateur de la Culture recrute
 ---
 
 
