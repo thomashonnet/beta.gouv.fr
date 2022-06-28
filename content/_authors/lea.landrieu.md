@@ -1,6 +1,6 @@
 ---
 fullname: Léa Landrieu
-role: Business developer
+role: Chargée de déploiement
 domaine: Déploiement
 github: lealandrieu
 missions:
