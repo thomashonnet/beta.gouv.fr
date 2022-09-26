@@ -6,18 +6,20 @@ sponsors:
 incubator: mtes
 phases:
   - name: investigation
-    start: 2022-04-01 
+    start: 2022-04-01
+    end: 2022-08-01
   - name: construction
     start: 2022-08-01
 link: https://www.programme-emile.org/
 repository: 
 stats: false
-contact:  alexandre.viscontini@dihal.gouv.fr 
+contact: alexandre.viscontini@dihal.gouv.fr 
 usertypes:
   - particulier
 dashlord_url: 
 accessibility_status: non conforme
 ---
+
 # Le problème : 
 Des personnes sans emploi et sans logement vivent en situation précaire en Île de France alors que des territoires ont des besoins de recrutement et des logements vacants. L'idée est de recouper ces opportunités et les candidats à un changement de vie (après diagnostic et accompagnement des profils).
 
